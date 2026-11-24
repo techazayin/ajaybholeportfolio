@@ -1,0 +1,44 @@
+/* White theme for AJAY's multi-page portfolio */
+:root{--background:#fff;--surface:#f7f8fa;--text:#20242b;--muted:#68717d;--accent:#477a19;--border:#e3e6eb;--font:"DM Sans",sans-serif;--heading:"Space Grotesk",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--background);color:var(--text);font-family:var(--font);line-height:1.7}a{color:inherit;text-decoration:none}
+.container{width:min(1040px,calc(100% - 40px));margin:auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font:700 27px var(--heading);letter-spacing:-1.5px;color:#20242b}
+.logo span,.hero h1 span,.inner-hero h1 span,.initials span,.rivals-preview strong span{color:var(--accent)}
+.nav-links{list-style:none;display:flex;gap:28px}.nav-links a{color:var(--muted);font-size:13px}.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+.menu-toggle{display:none;color:var(--text);background:none;border:0;font-size:25px;cursor:pointer}
+.hero{min-height:550px;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:50px;padding:65px 0}
+.eyebrow,.project-type{color:var(--accent);font-size:10px;font-weight:700;letter-spacing:2px}
+.hero h1,.inner-hero h1{font:700 clamp(45px,6vw,72px)/1.12 var(--heading);letter-spacing:-3px;margin:15px 0 20px}
+.intro{color:var(--muted);max-width:560px;font-size:15px}.hero-buttons{display:flex;gap:12px;margin-top:28px}
+.button{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:5px;font-size:12px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:transform .2s}
+.primary{background:var(--accent);color:#fff}.secondary{border-color:var(--border);color:var(--text);background:#fff}.button:hover{transform:translateY(-2px)}
+.hero-card{height:270px;border:1px solid var(--border);border-radius:10px;background:linear-gradient(145deg,#f3f6ef,#f7f8fa);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.initials{font:700 120px/.9 var(--heading);letter-spacing:-10px;color:#20242b}.hero-card p{color:var(--muted);font-size:9px;letter-spacing:2px;margin-top:24px}
+.section{padding:75px 0 85px}.section-title{margin-bottom:30px}.section-title h2,.content-panel h2{font:600 clamp(32px,4vw,43px)/1.2 var(--heading);letter-spacing:-1.5px;margin-top:8px}
+.section-description{color:var(--muted);font-size:14px;margin-top:10px;max-width:650px}.home-summary{padding-top:25px}
+.quick-links{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
+.simple-card,.content-panel{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:25px}
+.simple-card h2,.simple-card h3{font:600 19px var(--heading);margin-bottom:9px}.simple-card p,.content-panel p{color:var(--muted);font-size:13px;margin-top:10px}
+.skill-symbol{color:var(--accent);font:600 27px var(--heading);margin-bottom:20px}.inner-hero{padding:90px 0 25px}.inner-hero h1{margin-bottom:12px}
+.about-education{margin-top:22px}.skills-grid,.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.project-card{background:#fff;border:1px solid var(--border);border-radius:7px;overflow:hidden;box-shadow:0 8px 24px rgba(20,30,40,.04)}
+.project-preview{height:205px;padding:22px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.news-preview{background:linear-gradient(135deg,#dce8f3,#edf3f8);color:#26394c}.rivals-preview{background:linear-gradient(135deg,#e9e3f5,#f4f0fa);color:#30244b}
+.preview-label{font-size:9px;letter-spacing:2px;opacity:.75}.project-preview strong{font:700 39px/.98 var(--heading);text-align:center;margin:12px 0;letter-spacing:-2px}
+.project-preview small{font-size:10px;opacity:.8}.project-details{padding:23px}.project-type{font-size:9px}
+.project-details h2{font:600 19px var(--heading);margin:8px 0}.project-details>p:not(.project-type){color:var(--muted);font-size:13px}
+.project-link{display:inline-block;color:var(--accent);font-size:12px;font-weight:700;margin-top:17px}
+.education-card{display:flex;align-items:center;gap:20px;border:1px solid var(--border);background:var(--surface);border-radius:7px;padding:24px}
+.education-icon{width:58px;height:58px;display:grid;place-items:center;flex-shrink:0;background:var(--accent);color:#fff;border-radius:6px;font:700 16px var(--heading)}
+.education-card h3{font:600 19px var(--heading)}.education-card p{color:var(--muted);font-size:13px}.education-card span{display:inline-block;color:var(--accent);font-size:10px;margin-top:7px}
+.small-note{color:var(--muted);font-size:11px;margin-top:22px}.contact-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:start}
+.contact-form{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:25px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form-group{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.form-group label{font-size:11px;color:#303640}.form-group input,.form-group textarea{width:100%;padding:11px 12px;border-radius:4px;border:1px solid #d9dee5;background:#fff;color:var(--text);font:12px var(--font);outline:none}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--accent)}.form-group textarea{resize:vertical}
+.submit-button{width:100%}.form-status{color:var(--muted);font-size:10px;margin-top:12px}
+.footer{border-top:1px solid var(--border);padding:22px 0;background:#fafbfc}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.footer p,.footer-inner>a:last-child{color:var(--muted);font-size:11px}
+@media(max-width:700px){.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;width:100%;padding:18px 22px;background:#fff;border-bottom:1px solid var(--border);flex-direction:column;gap:14px}.nav-links.open{display:flex}.hero{grid-template-columns:1fr;min-height:auto;gap:35px;padding-top:65px}.hero-card{height:210px}.initials{font-size:95px}.section{padding:60px 0 65px}.inner-hero{padding-top:65px;padding-bottom:15px}.quick-links,.skills-grid,.projects-grid,.contact-section{grid-template-columns:1fr}.contact-section{gap:25px}}
+@media(max-width:460px){.container{width:calc(100% - 30px)}.hero h1,.inner-hero h1{letter-spacing:-2px}.hero-buttons{flex-wrap:wrap}.form-row{grid-template-columns:1fr;gap:0}.footer-inner{flex-wrap:wrap}.footer-inner p{order:3;width:100%}}
